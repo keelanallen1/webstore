@@ -1,0 +1,38 @@
+body {
+    background-color: orange
+}
+h1{
+    color: green;
+    margin: auto;
+    text-align: center;
+    font-size:80px
+}
+h2{
+    color: firebrick;
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+}
+h3{
+    color: darkorchid;
+    margin: auto;
+    text-align: left;
+    font-size: x-large;
+}
+
+p{
+    color: teal
+    border 2px solid black
+    padding 30px;
+    margin: 50px;
+}
+
+table{
+    margin-block-start: 10px;
+    margin-right: auto;
+    margin-left: auto
+    padding 10px;
+    text-align: center;
+    border: 2px solid black
+
+}

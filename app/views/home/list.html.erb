@@ -1,0 +1,74 @@
+<html><head>
+    <title> index </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<h1>
+    This Do be the Stuff that I got
+    </h1>
+<table>
+    <tbody><tr>
+        <th>Image   </th>
+        <th>Name  </th>
+        <th>Price  </th>
+        <th>Description  </th>
+        <th>Quantity  </th>
+    </tr>
+
+    <tr>
+        </tr><tr><td><img src="bazooka.png" alt="bazooka" width="200px" length="200px"></td></tr>
+        <tr><th></th>
+        <th>This is a Bazooka</th>
+        <th>Price is negotiable.</th>
+        <th>One size fits all. Fires a 20mm rocket. Enemies beware</th>
+        <th>We got 2 but one is for me</th>
+    </tr>
+    <tr>
+        </tr><tr><td><img src="samuel.jpg" alt="samuel" width="200px" length="200px"></td></tr>
+        <tr><th></th>
+        <th>This is Samuel and he is a cute little guy</th>
+        <th>Price is negotiable but nothing lower than $1300.</th>
+        <th>Great with kids. keep moist...he is a frog</th>
+        <th>We have alot. May have to liquidate if not taken care of</th>
+    </tr>
+
+    <tr>
+        </tr><tr><td><img src="ziggurat.jpg" alt="ziggurat" width="200px" length="200px"></td></tr>
+        <tr><th></th>
+        <th>This is the Choghazanbil Ziggurat</th>
+        <th>Literally Free. Please get it out of here. There has been a curse upon my lands for generations</th>
+        <th>12 million tons of granite, impossible to carve with the tools at the times, slightly radioactive, and aligns perfectly with the northern most star in the sky</th>
+        <th>Just one in stock</th>
+    </tr>
+    <tr>
+        </tr><tr><td><img src="money.jpg" alt="money" width="200px" length="200px"></td></tr>
+        <tr><th></th>
+        <th>Counterfit Money</th>
+        <th>1:1 with the US dollar</th>
+        <th>Essentially the real deal if you dont look too hard</th>
+        <th>We have alot. We have printers in the back</th>
+    </tr>
+
+</tbody></table>
+
+    <p>
+        <h3><%= link_to "Click this link to see the Team", "/team" %></h3>
+        <h3> <a href="/blog">Click this link To See Our Blog Post</a></h3>
+        <h3> <a href="/homepage">Return to the Home Site</a></h3>
+        
+    </p>
+
+
+<form action="/poll" method="POST">
+    <label>Username: </label>
+    <input name="username" type="text" placeholder="username">
+    <label>Password: </label>
+    <input name="password" type="password">
+    <input type="submit">
+</form>
+
+
+
+</body></html>
