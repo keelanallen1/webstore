@@ -9,4 +9,9 @@ Rails.application.routes.draw do
   get '/blog', to: "home#blog"
   get 'post/create'
   post 'post/store', to: "home#post"
+
+
+  
+  post '/cats', to: "home#create"
+  post '/additem', to: "home#additems"
 end

@@ -1,6 +1,6 @@
 <html><head>
     <title> index </title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <%= stylesheet_link_tag "styles.css" %>
 </head>
 
 <body>
@@ -53,22 +53,62 @@
 
 </tbody></table>
 
+<p> </p>
+
+<h3>
+    Add More Stuff
+    </h3>
+
+<form action="/additem" method="POST">
+    <input name ="names" type = "text" placeholder ="item name">
+    <input name ="price" type = "number" placeholder ="item price">
+    <input name ="description" type = "text" placeholder ="item decription">
+    <input name ="quantity" type = "number" placeholder ="item quantity">
+    <input type = "submit">
+</form>
+
+<table>
+<thead>
+<th>Name</th><th>Price</th><th>Description</th><th>Quantity</th>
+</thead>
+    <tbody>
+        <% @itemnew.each do |item| %>
+        <tr>
+            <td> <%= item.names %> </td>
+            <td> <%= item.price %></td>
+            <td> <%= item.description %> </td>
+            <td> <%= item.quantity %></td>
+        <%end%>
+    </tbody>
+</table>
+<p> </p>
+
+<h3>Add cats!</h3>
+<form action="/cats" method="POST">
+    <input name ="name" type = "text" placeholder ="cat name">
+    <input name ="weight" type = "number" placeholder ="cat weight">
+    <input type = "submit">
+</form>
+
+<table>
+<thead>
+<th>Name</th><th>Weight</th>
+</thead>
+    <tbody>
+        <% @cats.each do |cat| %>
+        <tr>
+            <td> <%= cat.name %> </td>
+            <td> <%= cat.weight %></td>
+        <%end%>
+    </tbody>
+</table>      
+
     <p>
         <h3><%= link_to "Click this link to see the Team", "/team" %></h3>
         <h3> <a href="/blog">Click this link To See Our Blog Post</a></h3>
         <h3> <a href="/homepage">Return to the Home Site</a></h3>
         
     </p>
-
-
-<form action="/poll" method="POST">
-    <label>Username: </label>
-    <input name="username" type="text" placeholder="username">
-    <label>Password: </label>
-    <input name="password" type="password">
-    <input type="submit">
-</form>
-
 
 
 </body></html>
