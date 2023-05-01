@@ -42,4 +42,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_030854) do
     t.datetime "updated_at", null: false
   end
 
+  
+
 end

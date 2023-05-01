@@ -7,10 +7,13 @@ class HomeController < ApplicationController
   def team          #this is the team page
   end
 
+
+
   def list          #this is the item list page
     @marketplace = Marketplace.all
     @cats = Cat.all
     @itemnew = Item.all
+    @marketplace = Marketplace.all
   end
 
   def blog
@@ -40,7 +43,20 @@ class HomeController < ApplicationController
        quantity: params[:quantity])
     newitems.save
     redirect_to "/list"
-    end
+  end
+
+  def newproduct
+    newproduct = Marketplace.new
+      newproduct.image = params[:image]
+      newproduct.name = params[:name]
+      newproduct.price = params[:price]
+      newproduct.description = params[:description]
+      newproduct.quantity = params[:quantity]
+
+      newproduct.save
+      redirect_to "/list"
+  end
+
 
 end
 

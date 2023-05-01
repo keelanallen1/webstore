@@ -6,8 +6,12 @@
 <body>
 
 <h1>
-    This Do be the Stuff that I got
+    Welcome to the Admin Page
     </h1>
+
+
+
+
 <table>
     <tbody><tr>
         <th>Image   </th>
@@ -18,7 +22,9 @@
     </tr>
 
     <tr>
-        </tr><tr><td><img src="bazooka.png" alt="bazooka" width="200px" length="200px"></td></tr>
+        </tr><tr><td>
+        <%= image_tag("bazooka.png") %>
+        </td></tr>
         <tr><th></th>
         <th>This is a Bazooka</th>
         <th>Price is negotiable.</th>
@@ -26,7 +32,8 @@
         <th>We got 2 but one is for me</th>
     </tr>
     <tr>
-        </tr><tr><td><img src="samuel.jpg" alt="samuel" width="200px" length="200px"></td></tr>
+        </tr><tr><td>
+        <%= image_tag("samuel.jpg") %>
         <tr><th></th>
         <th>This is Samuel and he is a cute little guy</th>
         <th>Price is negotiable but nothing lower than $1300.</th>
@@ -35,7 +42,7 @@
     </tr>
 
     <tr>
-        </tr><tr><td><img src="ziggurat.jpg" alt="ziggurat" width="200px" length="200px"></td></tr>
+        </tr><tr><td>  <%= image_tag("ziggurat.jpg") %>     </td></tr>
         <tr><th></th>
         <th>This is the Choghazanbil Ziggurat</th>
         <th>Literally Free. Please get it out of here. There has been a curse upon my lands for generations</th>
@@ -43,7 +50,7 @@
         <th>Just one in stock</th>
     </tr>
     <tr>
-        </tr><tr><td><img src="money.jpg" alt="money" width="200px" length="200px"></td></tr>
+        </tr><tr><td><%= image_tag("money.jpg") %></td></tr>
         <tr><th></th>
         <th>Counterfit Money</th>
         <th>1:1 with the US dollar</th>
@@ -53,10 +60,14 @@
 
 </tbody></table>
 
+
+
+<p> </p>
+
 <p> </p>
 
 <h3>
-    Add More Stuff
+    Add More Stuff To Check Out store
     </h3>
 
 <form action="/additem" method="POST">
@@ -107,6 +118,7 @@
         <h3><%= link_to "Click this link to see the Team", "/team" %></h3>
         <h3> <a href="/blog">Click this link To See Our Blog Post</a></h3>
         <h3> <a href="/homepage">Return to the Home Site</a></h3>
+         <h3> <a href="/products">Click Here To Check Out</a></h3>
         
     </p>
 
